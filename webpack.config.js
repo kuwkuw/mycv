@@ -17,8 +17,11 @@ module.exports = env => {
         },
         devtool: mode === 'development' ? 'inline-source-map' : '',
         devServer: {
-            contentBase: path.join(__dirname, 'dist'),
-            port: 5000
+            contentBase: [
+                path.join(__dirname, 'dist'),
+                path.join(__dirname, 'public')
+            ],
+            port: 5000,
         },
         plugins: [
             new CleanWebpackPlugin(),
@@ -38,7 +41,7 @@ module.exports = env => {
                         // Compiles Sass to CSS
                         'sass-loader',
                     ],
-                },
+                }
             ],
         },
     };
