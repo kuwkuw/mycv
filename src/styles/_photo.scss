@@ -1,0 +1,18 @@
+.photo {
+  height: 6.5rem;
+  width: 6.5rem;
+  border-color: $main-color;
+  border-width: 0.125rem;
+  border-style: solid;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  padding: 0.625rem;
+  margin-left: 3rem;
+  margin-top: 2.8rem;
+  box-sizing: border-box;
+  &__img {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+  }
+}

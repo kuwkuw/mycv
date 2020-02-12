@@ -1,45 +1,40 @@
 <ul class="skills">
+    {{#if education}}
     <li class="skills__item">
         <h2 class="title-2">Education</h2>
+        {{#each education }}
         <ul class="details">
             <li class="details__item">
-                2003 to 2009
+                {{period}}
             </li>
-            <li class="details__item_upercase">
-                University name
+            <li class="details__item_uppercase">
+                {{universityName}}
             </li>
-            <li class="details__item_upercase">
-                Your subject/Degree name
-            </li>
-        </ul>
-        <ul class="details">
-            <li class="details__item">
-                2003 to 2009
-            </li>
-            <li class="details__item_upercase">
-                University name
-            </li>
-            <li class="details__item_upercase">
-                Your subject/Degree name
+            <li class="details__item_uppercase">
+                {{subject}}
             </li>
         </ul>
+        {{/each}}
     </li>
+    {{/if}}
+    {{#if skills.length}}
     <li class="skills__item">
         <h2 class="title-2">Pro skills</h2>
         <ul class="details">
-            <li class="details__item">JavaScript</li>
-            <li class="details__item">Git</li>
-            <li class="details__item">Git</li>
-            <li class="details__item">Git</li>
+            {{#each skills as | skill | }}
+            <li class="details__item">{{skill}}</li>
+            {{/each}}
         </ul>
     </li>
+    {{/if}}
+    {{#if awards}}
     <li class="skills__item">
         <h2 class="title-2">Awards</h2>
         <ul class="details">
-            <li class="details__item_upercase">JavaScript</li>
-            <li class="details__item_upercase">Git</li>
-            <li class="details__item_upercase">Git</li>
-            <li class="details__item_upercase">Git</li>
+            {{#each awards as | award | }}
+            <li class="details__item">{{award}}</li>
+            {{/each}}
         </ul>
     </li>
+    {{/if}}
 </ul>

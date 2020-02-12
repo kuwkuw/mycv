@@ -1,6 +1,82 @@
 {
     "personal": {
-        "name": "Oleg",
-        "surname": "Kushch"
-    }
+        "photoUrl": "https://avatars3.githubusercontent.com/u/9605998?s=400&u=8475968223a57ac493ab1621145934222f93c7af&v=4",
+        "fullName": "Oleg Kushch",
+        "contacts": [
+            {
+                "contact": "+380634385410",
+                "type": "phone"
+            },
+            {
+                "contact": "skygrim",
+                "type": "skype"
+            },
+            {
+                "contact": "oleg.kushch85@gmail.com",
+                "type": "mail"
+            }
+        ]
+    },
+    "skills": [
+        "JavaScript",
+        "Angular 2​(basic skills)",
+        "VueJs​(basic skills)",
+        "jQuery",
+        "HTML",
+        "CSS",
+        "XML",
+        "Git",
+        "C#​(basic skills)​"
+    ],
+    "education": [
+        {
+            "period": "2003 to 2009",
+            "universityName": "​National Technical University «Kharkiv Polytechnic Institute»",
+            "subject": "Computer-driven system and network/Computer science and information  technologies"
+        }
+    ],
+    "profile": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, ipsam accusamus, distinctio quia esse at repellendus odit quidem alias numquam fuga praesentium animi, facilis magni. Illum rem excepturi laudantium esse.",
+    "experience": [
+        {
+            "period": {
+                "from": "4/2018",
+                "to": "now"
+            },
+            "companyName": "EPAM",
+            "jobPosition": "JavaScript develope",
+            "jobTile": "Softwar Engineer",
+            "description": "Ericsson MediaFirst TV Platform is a software-defined, media-optimized platform for the creation, management and delivery of next generation Pay TV. This end-to-end cloud-based platform embraces all content sources and delivery networks, equipping operators to deliver cutting-edge large scale video services to the billions of device. Project: MediaKiend (Ericsson-MediaFirst) Team: 6 - Front-end, 6-Back-end, 2 - QA 2 - Automation QA  Technologies: TypeScript, Backbone.js, .Net Core"
+            
+        },
+        {
+            "period": {
+                "from": "1/2018",
+                "to": "4/2018"
+            },
+            "companyName": "Jabil Kuatro",
+            "jobPosition": "JavaScript developer",
+            "jobTile": "Junior Softwer Engineer",
+            "description": "Use Angular 2, node.js/express, aws "
+        },
+        {
+            "period": {
+                "from": "6/2017",
+                "to": "12/2018"
+            },
+            "companyName": "JustCode",
+            "jobPosition": "JavaScript developer",
+            "jobTile": "Junior Softwer Engineer",
+            "description": "Transfer of business logic from jQuery to Angular; implemented the interaction of front-end and back-End pieces with the help of Restful services. Technologies:  AngularJs, Angular 2"
+        },
+        {
+            "period": {
+                "from": "5/2016",
+                "to": "6/2017"
+            },
+            "companyName": "Time is money",
+            "jobPosition": "JavaScript developer",
+            "jobTile": "Junior Softwer Engineer",
+            "description": "Implemented the interaction of front-end and back-End pieces with the help of Restful services, reconstruction and modernization of existing sites. Technologies: AngularJs, VueJs, Node.js and socket.io"
+        }
+    ]
 }
