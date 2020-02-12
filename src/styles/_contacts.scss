@@ -1,0 +1,27 @@
+.contacts {
+  @extend .flex-container;
+  align-items: center;
+  background-color: $third-color;
+  justify-content: center;
+  height: 4.25rem;
+
+  &__item {
+    margin: 0 1.875rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    .contacts-icon {
+      border: $secondary-color;
+      border-style: solid;
+      border-width: 0.0625rem;
+      border-radius: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1rem;
+      height: 1rem;
+      padding: 0.125rem;
+      margin-right: 1rem;
+    }
+  }
+}

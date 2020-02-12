@@ -1,55 +1,5 @@
+
 .header {
   @extend .flex-container;
   min-height: 11.5rem;
-}
-
-.photo {
-  height: 6.5rem;
-  width: 6.5rem;
-  border-color: $main-colot;
-  border-width: 0.125rem;
-  border-style: solid;
-  border-radius: 50%;
-  background-color: $secondry-color;
-  padding: 0.625rem;
-  margin-left: 3rem;
-  margin-top: 0.4rem;
-  box-sizing: border-box;
-  &__img {
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-  }
-}
-
-
-
-.contacts {
-  @extend .flex-container;
-  align-items: center;
-  background-color: $third-color;
-  justify-content: center;
-  height: 4.25rem;
-
-  &__text {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  &__item {
-    margin: 0 1.875rem;
-    font-size: 0.75rem;
-    display: table;
-    .contacts-icon {
-      border: $secondry-color;
-      border-style: solid;
-      border-width: 0.0625rem;
-      border-radius: 10%;
-      display: inline-block;
-      width: 1rem;
-      height: 1rem;
-      padding: 0.125rem;
-      margin-right: 1rem;
-    }
-  }
 }
