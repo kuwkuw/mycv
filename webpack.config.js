@@ -41,7 +41,11 @@ module.exports = env => {
                         // Compiles Sass to CSS
                         'sass-loader',
                     ],
-                }
+                },
+                {
+                    test: /\.hbs$/,
+                    loader: 'handlebars-loader'
+                },
             ],
         },
     };
