@@ -1,0 +1,138 @@
+@import "~reset-css";
+@import "base/vars";
+@import "base/mixins";
+@import "base/icons";
+
+@import "header";
+
+body {
+  color: $secondry-color;
+  background-color: $main-colot;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.container {
+  background-color: $main-colot;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 30px;
+
+  @media (min-width: 800px) {
+    max-width: 750px;
+  }
+}
+
+.upercase {
+  text-transform: uppercase;
+}
+
+.title-1 {
+  @extend .upercase;
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+
+.title-2 {
+  @extend .upercase;
+  color: $third-color;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  &::before {
+    content: " ";
+    background-color: $main-colot;
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &_dark {
+    @extend .title-2;
+    color: $secondry-color;
+    &::before {      
+      background-color: $secondry-color;
+    }
+  }  
+}
+
+.title-3 {
+  @extend .upercase;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills{
+  margin: 1.75rem 2.56rem;
+}
+
+.sidebar {
+  @extend .flex-container; 
+  background-color: $secondry-color;
+  color: $main-colot;
+  flex: 0 0 14.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  @extend .flex-container; 
+  margin: 1.75rem;
+
+  flex: 1 1 auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content__item,
+.skills__item {
+  position: relative;
+}
+
+.details {  
+  margin-bottom: 2.25rem;
+  &__item {
+    font-size: 0.6rem;
+    margin-bottom: 0.625rem;
+    &_upercase{
+      @extend .details__item, .upercase;
+    }
+  }
+
+  &__period {
+    display: inline-block;
+    font-size: 0.55rem;
+    > li {
+      background-color: $secondry-color;
+      color: $main-colot;
+      padding: 5px 8px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    margin-left: 1.25rem;
+  }
+
+  &__description {
+    @extend .description;
+    border-top-color: $secondry-color;
+    border-top-style: solid;
+    border-top-width: 2px;
+    margin-left: 3.5rem;
+  }
+}
+
+.content__item {
+  .description {
+    font-size: 0.6rem;
+    line-height: 2;
+    margin-bottom: 2.5rem;
+  }
+}
