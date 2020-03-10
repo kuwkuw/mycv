@@ -1,7 +1,7 @@
 <ul class="skills">
     {{#if education}}
     <li class="skills__item">
-        <h2 class="title-2">Education</h2>
+        <h2 class="title-3">Education</h2>
         {{#each education }}
         <ul class="details">
             <li class="details__item">
@@ -19,7 +19,7 @@
     {{/if}}
     {{#if skills.length}}
     <li class="skills__item">
-        <h2 class="title-2">Pro skills</h2>
+        <h2 class="title-3">Pro skills</h2>
         <ul class="details">
             {{#each skills as | skill | }}
             <li class="details__item">{{skill}}</li>
@@ -29,7 +29,7 @@
     {{/if}}
     {{#if awards}}
     <li class="skills__item">
-        <h2 class="title-2">Awards</h2>
+        <h2 class="title-3">Awards</h2>
         <ul class="details">
             {{#each awards as | award | }}
             <li class="details__item">{{award}}</li>

@@ -3,4 +3,7 @@
   background-color: $secondary-color;
   color: $main-color;
   flex: 0 0 14.5rem;
+  @include for-size(tablet-up) {
+    flex: 0 0 35%;
+  }
 }

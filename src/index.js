@@ -2,7 +2,7 @@ import "./styles/main.scss";
 
 import mainTemplate from "./templates/main.hbs";
 
-fetch("/data/cv-data.json").then(data => {
+fetch("data/cv-data.json").then(data => {
   const rootElement = document.querySelector("body>.container");
   data.json().then(cvData => {
     addPersonalInfo(rootElement, cvData);
