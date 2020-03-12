@@ -1,0 +1,31 @@
+.avatar {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  @extend .flex-container;
+
+  &-wrap {
+    border-color: $main-color;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-radius: 50%;
+    height: 8.45rem;
+    width: 8.45rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    @include for-size(phone) {
+      height: 6.5rem;
+      width: 6.5rem;
+      padding: 0.625rem;
+    }
+  }
+  &__img {
+    border-radius: 50%;
+    height: 6.3rem;
+    width: 6.3rem;
+    @include for-size(phone) {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}

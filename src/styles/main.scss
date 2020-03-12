@@ -4,10 +4,9 @@
 @import "base/icons";
 
 @import "header";
-@import "photo";
+@import "avatar";
 @import "contacts";
 @import "sidebar";
-
 
 body {
   color: $secondary-color;
@@ -17,17 +16,22 @@ body {
 
 .flex-container {
   display: flex;
+  flex-direction: column;
+  @include for-size(phone) {
+    flex-direction: row;
+  }
 }
 
 .container {
   background-color: $main-color;
-  margin: 0 auto;
-  margin-top: 1.25rem;
-  margin-bottom: 3.125rem;
-  box-shadow: 0.3125rem 0.3125rem 1.875rem;
-
-  @media (min-width: 800px) {
-    max-width: 750px;
+  width: 100%;
+  margin: 0;
+  @include for-size(desktop-up) {
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 1.25rem;
+    margin-bottom: 3.125rem;
+    box-shadow: 0.3125rem 0.3125rem 1.875rem;
   }
 }
 
@@ -37,14 +41,21 @@ body {
 
 .title-1 {
   @extend .uppercase;
-  font-size: 3rem;
+  font-size: $title-1-font-size;
   margin-bottom: 0.3rem;
 }
 
 .title-2 {
   @extend .uppercase;
+  font-size: $title-3-font-size;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.title-3 {
+  @extend .uppercase;
   color: $third-color;
-  font-size: 1rem;
+  font-size: $title-3-font-size;
   letter-spacing: 0.25rem;
   padding-top: 1rem;
   margin-bottom: 1.5rem;
@@ -59,7 +70,7 @@ body {
     left: 0;
   }
   &_dark {
-    @extend .title-2;
+    @extend .title-3;
     color: $secondary-color;
     &::before {
       background-color: $secondary-color;
@@ -67,15 +78,11 @@ body {
   }
 }
 
-.title-3 {
-  @extend .uppercase;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-}
-
 .skills {
-  padding: 1.75rem 2.56rem;
+  padding: 1.75rem;
+  @include for-size(phone) {
+    padding: 1.75rem 2.56rem;
+  }
 }
 
 .content {
@@ -89,7 +96,7 @@ body {
 .details {
   margin-bottom: 2.25rem;
   &__item {
-    font-size: 0.7rem;
+    font-size: $text-font-size;
     margin-bottom: 0.625rem;
     line-height: 1.2;
     &_uppercase {
@@ -99,7 +106,7 @@ body {
 
   &__period {
     display: inline-block;
-    font-size: 0.6rem;
+    font-size: $text-font-size;
     text-align: center;
     > li {
       background-color: $secondary-color;
@@ -110,7 +117,10 @@ body {
 
   &__title {
     display: inline-block;
-    margin-left: 1.25rem;
+    margin-left: 1rem;
+    @include for-size(phone) {
+      margin-left: 1.25rem;
+    }
   }
 
   &__description {
@@ -125,7 +135,7 @@ body {
 
 .content__item {
   .description {
-    font-size: 0.7rem;
+    font-size: $text-font-size;
     line-height: 2;
     margin-bottom: 2.5rem;
   }
